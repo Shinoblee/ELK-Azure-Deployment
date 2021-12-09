@@ -83,7 +83,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![ELK Docker Image](Diagrams/ELK_Docker.png)
+![ELK Docker Image](Images/ELK_Docker.png)
 
 ### Target Machines & Beats
 
@@ -131,3 +131,15 @@ SSH into the Jumpbox Provisioner once the new VM has been established and follow
 - Confirm that the new machine is running the docker container with all the right configurations
 
   `sudo docker ps`
+
+### Confirmation of Success
+
+If all the playbooks and configurations have been completed successfully you should see the the **Kibana** application hosted at your internal IP of the host machine. Type this address into Chrome/Firefox/Edge: `http://<internal ip>:5601/app/kibana`
+
+![Kibana Screen](Images/Kibana_Screen.png)
+
+Additionally if you have correctly set up **Filebeat** on the webserver, you will be able to see that data within Kibana and will be able to monitor traffic for the servers.
+![Filebeat Screen](Images/Filebeat_Screen.png)
+
+Finally if you have installed **Metricbeat** successfully on the webservers, you will be able to view that data within Kibana as well.
+![Metricbeat Screen](Images/Metricbeat_Screen.png)
