@@ -6,14 +6,28 @@ The files in this repository were used to configure the network depicted below.
 
 The config and playbook files have been tested and used to generate a live ELK deployment on Azure. They can be used to create create and spin up all the required VMs in the network diagram and can easibly be modified to add more machines to the network. All scripts run with a tool called [Ansible](https://www.ansible.com/) to configure the machines to have the same settings.
 
-- install_webserver.yml
+#### DVWA Webserver
+
+- [install_webserver.yml](DVWA/install_webserver.yml)
   - This will create another instance of the webserver from a docker image
-- install_elk.yml
+
+#### ELK
+
+- [install_elk.yml](ELK/install_elk.yml)
   - This will create the a machine with the ELK stack monitoring capabilities
-- filebeat-playbook.yml
+
+#### Filebeat
+
+- [filebeat-playbook.yml](Filebeat/filebeat-playbook.yml)
   - This will create and start up filebeat to gather log information for analysis
-- metricbeat-playbook.yml
-  - This will create and start up metricbeat to analyze gathered information regarding the machines in the network.
+- [filebeat-config.yml](Filebeat/filebeat-config.yml)
+  - Configuration file needed for all the vm's. **Must change to you ip addresses**
+
+#### Metricbeat
+
+- [metricbeat-playbook.yml](Metricbeat/metricbeat-playbook.yml)
+  - This will create and start up metricbeat to analyze gathered information regarding the machines in the network. -[metricbeat-config.yml](Metricbeat/metricbeat-config.yml)
+  - Configuration file needed for all the vm's. **Must change to you ip addresses**
 
 ### Description of the Topology
 
