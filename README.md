@@ -8,25 +8,25 @@ The config and playbook files have been tested and used to generate a live ELK d
 
 #### DVWA Webserver
 
-- [install_webserver.yml](DVWA/install_webserver.yml)
+- [install_webserver.yml](https://github.com/Shinoblee/ELK-Azure-Deployment/blob/main/Ansible/DVWA/install_webserver.yml)
   - This will create another instance of the webserver from a docker image
 
 #### ELK
 
-- [install_elk.yml](ELK/install_elk.yml)
+- [install_elk.yml](https://github.com/Shinoblee/ELK-Azure-Deployment/blob/main/Ansible/ELK/install_elk.yml)
   - This will create the a machine with the ELK stack monitoring capabilities
 
 #### Filebeat
 
-- [filebeat-playbook.yml](Filebeat/filebeat-playbook.yml)
+- [filebeat-playbook.yml](https://github.com/Shinoblee/ELK-Azure-Deployment/blob/main/Ansible/Filebeat/filebeat-playbook.yml)
   - This will create and start up filebeat to gather log information for analysis
-- [filebeat-config.yml](Filebeat/filebeat-config.yml)
+- [filebeat-config.yml](https://github.com/Shinoblee/ELK-Azure-Deployment/blob/main/Ansible/Filebeat/filebeat-config.yml)
   - Configuration file needed for all the vm's. **Must change to you ip addresses**
 
 #### Metricbeat
 
-- [metricbeat-playbook.yml](Metricbeat/metricbeat-playbook.yml)
-  - This will create and start up metricbeat to analyze gathered information regarding the machines in the network. -[metricbeat-config.yml](Metricbeat/metricbeat-config.yml)
+- [metricbeat-playbook.yml](https://github.com/Shinoblee/ELK-Azure-Deployment/blob/main/Ansible/Metricbeat/metricbeat-playbook.yml)
+  - This will create and start up metricbeat to analyze gathered information regarding the machines in the network. -[metricbeat-config.yml](https://github.com/Shinoblee/ELK-Azure-Deployment/blob/main/Ansible/Metricbeat/metricbeat-config.yml)
   - Configuration file needed for all the vm's. **Must change to you ip addresses**
 
 ### Description of the Topology
